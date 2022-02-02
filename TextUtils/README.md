@@ -29,11 +29,11 @@
       /*
         Create not-disorted centered scaled string
        */
-      utils.drawScaledCenteredString("Hello world!", 10,10, Color.white.getRgb(), 1.3f);
+      utils.drawCenteredScaledString("Hello world!", 10,10, Color.white.getRgb(), 1.3f);
       /*
         Create disorted centered scaled string
       */
-      utils.drawScaledCenteredString("Hello world!", 10,10, Color.white.getRgb(), 1.3f, 0.5f);
+      utils.drawCenteredScaledString("Hello world!", 10,10, Color.white.getRgb(), 1.3f, 0.5f);
       
       super.drawScreen(mouseX, mouseY, partialTicks);
   }
