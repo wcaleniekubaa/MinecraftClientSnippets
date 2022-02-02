@@ -12,7 +12,7 @@ import net.minecraft.client.gui.*;
  * @author wcaleniekubaa#4196
  * If there is any problem write to me :) 
  * or to the Eric Golde discord server
- * 
+ * you can also create issue on github
  */
 public class ImageButton extends GuiButton {
     private final ResourceLocation img;
