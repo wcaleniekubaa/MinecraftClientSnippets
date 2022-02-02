@@ -1,4 +1,4 @@
-package pl.dotclient.gui.buttons;
+package clientname.gui.buttons;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
