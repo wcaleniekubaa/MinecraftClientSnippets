@@ -1,5 +1,5 @@
 How to use?
-- Just add this button to the buttonList in you Gui
+- Just add this button to the buttonList in your Gui
  ```
  @Override
  public void initGui(){
