@@ -8,3 +8,5 @@ How to use?
     
  }
  ```
+**Showcase**: 
+https://gyazo.com/8c8185f70de87195c53736d7c2334921
