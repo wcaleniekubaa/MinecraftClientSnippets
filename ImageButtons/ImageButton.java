@@ -37,13 +37,9 @@ public class ImageButton extends GuiButton {
     @Override
     public void drawButton(Minecraft mc, int mouseX, int mouseY) {
         if(visible){
-            GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
             this.hovered = mouseX >= this.xPosition && mouseY >= this.yPosition && mouseX < this.xPosition + this.width && mouseY < this.yPosition + this.height;
             int i = this.getHoverState(this.hovered);
-
-
             if(hovered){
-
                 drawScaledImage((int) (xPosition / 1.05),(int) (yPosition / 1.05), (int) (scale * 1.25), img);
             } else {
                 drawScaledImage(xPosition,yPosition, scale, img);
