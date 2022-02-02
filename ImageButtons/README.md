@@ -1,6 +1,6 @@
 How to use?
 - Just add this button to the buttonList in your Gui
- ```
+ ```java
  @Override
  public void initGui(){
     System.out.println("Created Gui!");
