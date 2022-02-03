@@ -15,6 +15,7 @@ import net.minecraft.client.gui.*;
  * you can also create issue on github
  *
  * @see FontRenderer#drawString(String, float, float, int, boolean)
+ * You can also set the methods static lol
  *
  */
 public class TextUtils {
