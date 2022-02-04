@@ -59,7 +59,7 @@ protected boolean canRenderName(T entity)
 
                             Minecraft mc = Minecraft.getMinecraft();
                             mc.getTextureManager().bindTexture(new ResourceLocation("dotmod/icons/turtle.png"));
-                            net.minecraft.client.gui.Gui.drawModalRectWithCustomSizedTexture(-fontrenderer.getStringWidth(entity.getDisplayName().getFormattedText()) / 2 - 12, -2,10,10,10,10,10,10);
+                            Gui.drawModalRectWithCustomSizedTexture(-fontrenderer.getStringWidth(entity.getDisplayName().getFormattedText()) / 2 - 12, -2,10,10,10,10,10,10);
                         }
                         GlStateManager.enableLighting();
                         GlStateManager.disableBlend();
