@@ -5,11 +5,21 @@
 public void renderLivingLabel(T entityIn, String str, double x, double y, double z, int maxDistance){
     // replace world renderer functions with this 
     // add this to centered and resize rect above head
-    worldrenderer.func_181668_a(7, DefaultVertexFormats.field_181706_f);
-    worldrenderer.func_181662_b((double)(-j - 1) - 12 + 6, (double)(-1 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
-    worldrenderer.func_181662_b((double)(-j - 1) -12 + 6, (double)(8 + i) , 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
-    worldrenderer.func_181662_b((double)(j + 1) + 6 , (double)(8 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
-    worldrenderer.func_181662_b((double)(j + 1) + 6, (double)(-1 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
+    if(entityIn instanceof EntityPlayer) {
+        worldrenderer.func_181668_a(7, DefaultVertexFormats.field_181706_f);
+        worldrenderer.func_181662_b((double) (-j - 1) - 12 + 6, (double) (-1 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
+        worldrenderer.func_181662_b((double) (-j - 1) - 12 + 6, (double) (8 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
+        worldrenderer.func_181662_b((double) (j + 1) + 6, (double) (8 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
+        worldrenderer.func_181662_b((double) (j + 1) + 6, (double) (-1 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
+        tessellator.draw();
+    } else {
+        worldrenderer.func_181668_a(7, DefaultVertexFormats.field_181706_f);
+        worldrenderer.func_181662_b((double) (-j - 1) + 6 , (double) (-1 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
+        worldrenderer.func_181662_b((double) (-j - 1)  + 6, (double) (8 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
+        worldrenderer.func_181662_b((double) (j + 1)  + 6, (double) (8 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
+        worldrenderer.func_181662_b((double) (j + 1) + 6, (double) (-1 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
+        tessellator.draw();
+    }
     // add this after last fontrenderer drawstring
     if(entityIn instanceof EntityPlayerSP){
         Minecraft mc = Minecraft.getMinecraft();
@@ -23,11 +33,21 @@ public void renderLivingLabel(T entityIn, String str, double x, double y, double
 public void renderLivingLabel(T entityIn, String str, double x, double y, double z, int maxDistance){
     // replace world renderer functions with this 
     // add this to centered and resize rect above head
-    worldrenderer.begin(7, DefaultVertexFormats.POSITION_COLOR);
-    worldrenderer.pos((double)(-j - 1) - 12 + 6, (double)(-1 + i), 0.0D).color(0.0F, 0.0F, 0.0F, 0.25F).endVertex();
-    worldrenderer.pos((double)(-j - 1) -12 + 6, (double)(8 + i) , 0.0D).color(0.0F, 0.0F, 0.0F, 0.25F).endVertex();
-    worldrenderer.pos((double)(j + 1) + 6 , (double)(8 + i), 0.0D).color(0.0F, 0.0F, 0.0F, 0.25F).endVertex();
-    worldrenderer.pos((double)(j + 1) + 6, (double)(-1 + i), 0.0D).color(0.0F, 0.0F, 0.0F, 0.25F).endVertex();
+    if(entityIn instanceof EntityPlayer) {
+        worldrenderer.begin(7, DefaultVertexFormats.POSITION_COLOR);
+        worldrenderer.pos((double) (-j - 1) - 12 + 6, (double) (-1 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
+        worldrenderer.pos((double) (-j - 1) - 12 + 6, (double) (8 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
+        worldrenderer.pos((double) (j + 1) + 6, (double) (8 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
+        worldrenderer.pos((double) (j + 1) + 6, (double) (-1 + i), 0.0D).func_181666_a(0.0F, 0.0F, 0.0F, 0.25F).func_181675_d();
+        tessellator.draw();
+    } else {
+        worldrenderer.begin(7, DefaultVertexFormats.POSITION_COLOR);
+        worldrenderer.pos((double) (-j - 1) + 6 , (double) (-1 + i), 0.0D).color(0.0F, 0.0F, 0.0F, 0.25F).endVertex();
+        worldrenderer.pos((double) (-j - 1)  + 6, (double) (8 + i), 0.0D).color(0.0F, 0.0F, 0.0F, 0.25F).endVertex();
+        worldrenderer.pos((double) (j + 1)  + 6, (double) (8 + i), 0.0D).color(0.0F, 0.0F, 0.0F, 0.25F).endVertex();
+        worldrenderer.pos((double) (j + 1) + 6, (double) (-1 + i), 0.0D).color(0.0F, 0.0F, 0.0F, 0.25F).endVertex();
+        tessellator.draw();
+    }
     // add this after last fontrenderer drawstring
     if(entityIn instanceof EntityPlayerSP){
         Minecraft mc = Minecraft.getMinecraft();
