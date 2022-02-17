@@ -4,7 +4,7 @@ How to use?
  @Override
  public void initGui(){
     System.out.println("Created Gui!");
-    this.buttonList.add(new ImageButton(0, 10,10, 20, new ResourceLocation("client/icons/uricon.png"));
+    this.buttonList.add(new ImageButton(0, 10,10, 20, new ResourceLocation("client/icons/uricon.png")));
     
  }
  ```
