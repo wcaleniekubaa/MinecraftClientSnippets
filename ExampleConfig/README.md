@@ -1,5 +1,5 @@
 <h2>How to use that?</h2>
-<h4>This is easy, You need arraylist of your mods (but thats easy)</h4>
+<h4>This is easy, You need arraylist of your mods (but thats easy), and change references</h4>
 
 ```java
   // start method
@@ -25,3 +25,4 @@
     }
   }
 ```
+
