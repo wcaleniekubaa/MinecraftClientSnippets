@@ -25,4 +25,27 @@
     }
   }
 ```
+<h4>It looks like that!</h4>
 
+```json
+{
+  "mods": [
+    {
+      "name": "ExampleMod1",
+      "position": {
+        "x": 75,
+        "y": 34
+      },
+      "enabled": true
+    },
+    {
+      "name": "ExampleMod2",
+      "position": {
+        "x": 90,
+        "y": 30
+      },
+      "enabled": false
+    }
+  ]
+}
+```
